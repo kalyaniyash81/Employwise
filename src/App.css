@@ -1,38 +1,123 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #121212;
+  color: #e0e0e0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Alert styles */
+.alert {
+  padding: 12px 16px;
+  margin: 12px 0;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  border-left: 4px solid transparent;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.alert-error {
+  background-color: rgba(255, 72, 72, 0.15);
+  color: #ff6b6b;
+  border-left-color: #ff4444;
+}
+
+.alert-success {
+  background-color: rgba(76, 175, 80, 0.15);
+  color: #66bb6a;
+  border-left-color: #2e7d32;
+}
+
+/* Button styles */
+button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background-color: #444 !important;
+  color: #888 !important;
+}
+
+button:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Primary button style (can be applied with className="primary-btn") */
+.primary-btn {
+  background: linear-gradient(135deg, #5d8bf4 0%, #3a5fc8 100%);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.primary-btn:hover:not(:disabled) {
+  background: linear-gradient(135deg, #4a7be6 0%, #2a4db8 100%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Danger button style (can be applied with className="danger-btn") */
+.danger-btn {
+  background-color: #d32f2f;
+  color: white;
+}
+
+.danger-btn:hover:not(:disabled) {
+  background-color: #b71c1c;
+}
+
+/* Secondary button style */
+.secondary-btn {
+  background-color: #333;
+  color: #e0e0e0;
+  border: 1px solid #444;
+}
+
+.secondary-btn:hover:not(:disabled) {
+  background-color: #3d3d3d;
+}
+
+/* Link styles */
+a {
+  color: #5d8bf4;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #4a7be6;
+  text-decoration: underline;
+}
+
+/* Input styles */
+input, textarea, select {
+  background-color: #2d2d2d;
+  border: 1px solid #444;
+  color: #f0f0f0;
+  padding: 10px 14px;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #5d8bf4;
+  box-shadow: 0 0 0 2px rgba(93, 139, 244, 0.3);
+}
+
+/* Card styles */
+.card {
+  background: #1e1e1e;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  padding: 1.5rem;
+  border: 1px solid #333;
 }
