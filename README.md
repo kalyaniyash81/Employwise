@@ -9,6 +9,10 @@ Token-based authentication
 
 Form validation
 
+Use the following test credentials:
+Email: eve.holt@reqres.in
+Password: cityslicka
+
 Error handling
 
 Level 2: User Listing
@@ -76,25 +80,6 @@ Start the development server:
 bash
 Copy
 npm start
-Open your browser and visit:
-
-Copy
-http://localhost:3000
-Project Structure
-Copy
-employwise/
-├── public/                 # Static files
-├── src/
-│   ├── components/         # Reusable components
-│   ├── context/            # Context providers
-│   ├── services/           # API services
-│   ├── utils/              # Utility functions
-│   ├── App.js              # Main application component
-│   └── index.js            # Application entry point
-├── package.json
-└── README.md
-Usage
-Login Page
 
 Use the following test credentials:
 
@@ -120,4 +105,5 @@ Save changes or cancel
 
 Deployment
 The application is been deployed to render:
+link:-https://employwise-e2b4.onrender.com
 
